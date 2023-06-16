@@ -49,3 +49,11 @@ In classic open-source spirit, Vimacs was created to "scratch an itch". I used t
 Please don't get me wrong--I'm not flaming Emacs, and I'm definitely not saying that it's a bad editor. It's a fantastic editor; it's arguably one of the most powerful pieces of software on the planet. It's just not the kind of editor that I like to use on a daily basis. I don't need most of its ninja-fu abilities, but some of them are incredibly helpful. I can't live without things like dynamic abbreviation (the magical `M-/` key), and having the editor understand the syntax of the file you're editing. Once you're used to those features, life is simply miserable without them.
 Vimacs was created because I was looking for an alternative to Emacs, and I found none. I wanted a cross-platform editor, since I work a lot on both Win32 and UNIX systems, and I wanted it to be fast and easy to customise, yet still have most of the power that Emacs gave me when I was editing text files, or coding. I tried every single editor I found on Freshmeat and Ibiblio, but I still couldn't find one that I liked. Vim would have been perfect, but I could never get used to the moded style of editing. Pressing &lt;Esc&gt; all the time drove me nuts. (I'm not saying that moded editing sucks, mind you, I'm just saying that I personally hated being forced into that kind of editing style.)
 After toying around with Vim's scripting language, I decided to do something to end my misery, and I figured that Vim's scripting capabilities were powerful enough that it could be used to emulate Emacs quite well. I wouldn't be able to emulate everything, of course, but I'd be able to emulate Emacs well enough that it'd have all the key bindings that I was used to. So, Vimacs was born. Vim by itself is a powerful editor; I loved everything about it except for the moded editing paradigm. Vimacs is simply something which makes Vim more accessible to the non-Vi crowd, and it does so in a way which impacts existing Vim users in a very small way.
+
+Configure
+---------
+
+In Neovim set the variable to enable vimacs
+```vim
+let g:VM_Enabled = 1
+```
